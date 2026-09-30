@@ -1,0 +1,70 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGenie - AI Learning Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🤖 EduGenie</h1>
+    <p>AI Learning Assistant</p>
+</header>
+
+<nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('tutor')">AI Tutor</button>
+    <button onclick="showSection('quiz')">Quiz</button>
+    <button onclick="showSection('notes')">Notes</button>
+</nav>
+
+<section id="home" class="section active">
+    <h2>Learn Smarter with EduGenie</h2>
+    <p>Your simple digital learning assistant.</p>
+
+ 
+</section>
+
+<section id="tutor" class="section">
+    <h2>🤖 AI Tutor</h2>
+
+    <input type="text" id="question"
+           placeholder="Ask your question...">
+
+    <button onclick="askTutor()">Ask</button>
+
+    <div id="answer" class="result"></div>
+</section>
+
+<section id="quiz" class="section">
+    <h2>📝 Quiz Generator</h2>
+
+    <input type="text" id="topic"
+           placeholder="Enter topic">
+
+    <button onclick="generateQuiz()">Generate Quiz</button>
+
+    <div id="quizResult" class="result"></div>
+</section>
+
+<section id="notes" class="section">
+    <h2>📚 Notes Generator</h2>
+
+    <input type="text" id="notesTopic"
+           placeholder="Enter topic">
+
+    <button onclick="generateNotes()">Generate Notes</button>
+
+    <div id="notesResult" class="result"></div>
+</section>
+<footer>
+    <p>© 2026 EduGenie | Student Learning Assistant</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
